@@ -134,7 +134,7 @@ textarea {
 
 .page-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -221,6 +221,13 @@ textarea {
   font-family: Consolas, monospace;
   max-width: 260px;
   word-break: break-all;
+}
+
+.text-cell {
+  max-width: 260px;
+  white-space: pre-wrap;
+  line-height: 1.7;
+  color: #5d4326;
 }
 
 .knowledge-layout {

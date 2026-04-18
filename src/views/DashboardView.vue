@@ -3,7 +3,7 @@ import { onMounted, ref } from 'vue'
 import { getOverview } from '../api'
 
 const loading = ref(false)
-const stats = ref({ userCount: 0, recordCount: 0, knowledgeCount: 0, latestRecords: [] })
+const stats = ref({ userCount: 0, recordCount: 0, knowledgeCount: 0, analysisCount: 0, latestRecords: [] })
 
 async function loadData() {
   loading.value = true
@@ -33,6 +33,10 @@ onMounted(loadData)
     <div class="stat-card">
       <span>知识文章</span>
       <strong>{{ stats.knowledgeCount }}</strong>
+    </div>
+    <div class="stat-card">
+      <span>AI 分析次数</span>
+      <strong>{{ stats.analysisCount }}</strong>
     </div>
 
     <div class="panel wide-panel">
@@ -65,4 +69,3 @@ onMounted(loadData)
     </div>
   </div>
 </template>
-

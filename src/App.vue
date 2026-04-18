@@ -8,6 +8,7 @@ const menus = [
   { path: '/dashboard', label: '数据总览' },
   { path: '/users', label: '用户管理' },
   { path: '/records', label: '训练记录' },
+  { path: '/analyses', label: 'AI 分析' },
   { path: '/knowledge', label: '知识文章' }
 ]
 

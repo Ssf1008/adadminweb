@@ -4,6 +4,7 @@ import UsersView from './views/UsersView.vue'
 import RecordsView from './views/RecordsView.vue'
 import KnowledgeView from './views/KnowledgeView.vue'
 import LoginView from './views/LoginView.vue'
+import AnalysesView from './views/AnalysesView.vue'
 
 const routes = [
   { path: '/', redirect: '/dashboard' },
@@ -11,6 +12,7 @@ const routes = [
   { path: '/dashboard', component: DashboardView },
   { path: '/users', component: UsersView },
   { path: '/records', component: RecordsView },
+  { path: '/analyses', component: AnalysesView },
   { path: '/knowledge', component: KnowledgeView }
 ]
 

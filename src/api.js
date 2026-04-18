@@ -32,6 +32,15 @@ export async function getRecords() {
   return data
 }
 
+export async function getAnalyses(userId = '') {
+  const params = {}
+  if (userId !== '' && userId !== null && userId !== undefined) {
+    params.userId = userId
+  }
+  const { data } = await api.get('/admin/analyses', { params })
+  return data
+}
+
 export async function getKnowledge() {
   const { data } = await api.get('/admin/knowledge')
   return data
